@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page counter</title>
+</head>
+<body>
+<h2>This page has been accessed <span id="counter">0</span> times.</h2>
+<script>
+    // JavaScript to update the counter on page load
+    document.getElementById("counter").innerText = <%= request.getAttribute("counter") %>;
+</script>
+</body>
+</html>
